@@ -1,0 +1,28 @@
+# Dependency Directories
+**/node_modules/
+/jspm_packages/
+
+# Runtime and Diagnostic Files
+/pids
+*.pid
+*.seed
+*.log
+npm-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build/Dist Output
+/dist
+/build
+/out
+
+# Sensitive Environment Variables
+# NEVER commit these, as they contain secrets like API keys.
+.env
+.env.*
+.env.local
+
+# Optional Caches
+.npm
+.eslintcache
+.parcel-cache
