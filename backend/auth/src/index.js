@@ -6,7 +6,7 @@ import connectDB from './config/db.js';
 
 dotenv.config();
 const app = express();
-const port = 5001;
+const port = (process.env.port || 5001);
 
 app.use(cors());
 app.use(express.json());
@@ -18,6 +18,6 @@ app.get('/health', (req, res) => {
   res.json({ status: 'auth-service-ok' });
 });
 
-app.listen(process.env.port || port, () => {
+app.listen(port, () => {
   console.log(`Auth service running on ${port}`)
 })
